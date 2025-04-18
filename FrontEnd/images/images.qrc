@@ -1,0 +1,17 @@
+<RCC>    
+    <qresource prefix="/images">
+        <file>add-categories-icon.ico</file>
+        <file>angle-circle-arrow-up-icon.ico</file>
+        <file>cpu-server-icon.ico</file>
+        <file>display-screen-color-icon.ico</file>
+        <file>eye-icon.ico</file>
+        <file>folder-icon.ico</file>
+        <file>hard-drive-icon.ico</file>
+        <file>microchip-icon.ico</file>
+        <file>plus-icon.ico</file>
+        <file>podcast-icon.ico</file>
+        <file>setting-icon.ico</file>
+        <file>usb-icon.ico</file>
+        <file>volume-icon.ico</file>
+    </qresource>
+</RCC>
