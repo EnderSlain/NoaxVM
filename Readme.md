@@ -3,7 +3,7 @@
 NoaxVM is a Virtual Machine Manager designed for high performance, customizability, and security. It can run on both Windows and Linux platforms.
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://travis-ci.org)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/EnderSlain/NoaxVM)](https://opensource.org/license/gpl-3-0)
 
 
 ![Image](https://github.com/user-attachments/assets/f92cb2ad-abea-41ec-950d-0d1710e00b0f)
@@ -34,4 +34,4 @@ cd NoaxVM
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the GNU/GPL v3 License. See the [LICENSE](LICENSE) file for more information.
