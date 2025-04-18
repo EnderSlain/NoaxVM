@@ -60,6 +60,8 @@ int main(int argc, char *argv[])
     machinesButton->setCheckable(true);
     helpButton->setCheckable(true);
 
+    machinesButton->setChecked(true);
+
     QObject::connect(fileButton, &QPushButton::clicked, [&]() {
         fileButton->setChecked(true);
         machinesButton->setChecked(false);
@@ -85,6 +87,8 @@ int main(int argc, char *argv[])
     topButtonLayout->addWidget(helpButton);
     topButtonLayout->addStretch();
 
+
+    //temp data for the left panel
 
     // Left panel - machine list
     QListWidget* machineList = new QListWidget();
@@ -119,23 +123,29 @@ int main(int argc, char *argv[])
     NoaxVMSettingsButton->resize(24,26);
     NoaxVMSettingsButton->setIconSize(QSize(24,26));
     
-    // Right panel - details view
+    // Right panel - details
     QVBoxLayout* rightPanel = new QVBoxLayout();
 
     // Toolbar
     QHBoxLayout* toolbar = new QHBoxLayout();
-    toolbar->addWidget(AddVMButton);
     toolbar->addWidget(NewVMButton);
+    toolbar->addWidget(AddVMButton);
     toolbar->addWidget(NoaxVMSettingsButton);
     toolbar->addStretch();
 
     rightPanel->addLayout(toolbar);
+    rightPanel->addStretch();
 
+    QHBoxLayout* headerLayout = new QHBoxLayout();
+    headerLayout->addLayout(topButtonLayout);
+    headerLayout->addLayout(toolbar);
+    headerLayout->addStretch();
+    
     QVBoxLayout* leftPanelLayout = new QVBoxLayout();
-    leftPanelLayout->addLayout(topButtonLayout);
+    leftPanelLayout->addLayout(headerLayout);
     leftPanelLayout->addWidget(machineList);
     leftPanelLayout->addStretch();
-
+    
     mainLayout->addLayout(leftPanelLayout);
     mainLayout->addLayout(rightPanel);
 

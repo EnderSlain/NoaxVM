@@ -5,6 +5,8 @@ QWidget {
 QPushButton {
     border: none;
     outline: none;
+    padding: 8px 8px;
+    margin-top: 10px;
 }
 
 QListWidget {
@@ -29,33 +31,20 @@ QListWidget::item:selected {
     background-color: rgb(55,60,67)
 }
 
-#fileButton {
-    border: none;
-    color: rgb(224,224,224);
-    text-align: center;
-}
-
-#fileButton:checked {
-    color: rgb(72,242,255);
-}
-
-
-#machinesButton {
-    border: none;
-    color: rgb(224,224,224);
-    text-align: center;
-}
-
-#machinesButton:checked {
-    color: rgb(72,242,255);
-}
-
+#fileButton ,
+#machinesButton,
 #helpButton {
     border: none;
     color: rgb(224,224,224);
     text-align: center;
+    font-size: 16pt;
+    padding: 8px 16px;
+    min-width: 60px;
+    min-height: 40px;
 }
 
+#fileButton:checked,
+#machinesButton:checked,
 #helpButton:checked {
     color: rgb(72,242,255);
 }
