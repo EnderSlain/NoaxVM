@@ -1,3 +1,61 @@
 QWidget {
     background-color: rgb(19,19,19);
 }
+
+QPushButton {
+    border: none;
+    outline: none;
+}
+
+QListWidget {
+    border: none;
+    outline: none;
+    background-color: rgb(40,44,52)
+}
+
+QPushButton:focus,
+QPushButton:pressed {
+    border: none;
+    outline: none;
+}
+
+QListWidget:hover {
+    border: none;
+    outline: none;
+}
+
+QListWidget::item:selected {
+    border: 2px solid rgb(0,173,255);
+    background-color: rgb(55,60,67)
+}
+
+#fileButton {
+    border: none;
+    color: rgb(224,224,224);
+    text-align: center;
+}
+
+#fileButton:checked {
+    color: rgb(72,242,255);
+}
+
+
+#machinesButton {
+    border: none;
+    color: rgb(224,224,224);
+    text-align: center;
+}
+
+#machinesButton:checked {
+    color: rgb(72,242,255);
+}
+
+#helpButton {
+    border: none;
+    color: rgb(224,224,224);
+    text-align: center;
+}
+
+#helpButton:checked {
+    color: rgb(72,242,255);
+}
